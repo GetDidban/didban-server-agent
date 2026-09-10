@@ -2,6 +2,10 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { resolveSocketUrl } from '../src/index.js';
 
+test('uses the hosted Didban endpoint by default', () => {
+  assert.equal(resolveSocketUrl(), 'wss://api.getdidban.ir/api/v1/live');
+});
+
 test('uses an explicit complete WebSocket endpoint', () => {
   assert.equal(resolveSocketUrl('wss://didban.example/live/socket'), 'wss://didban.example/live/socket');
 });

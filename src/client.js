@@ -2,7 +2,7 @@ import os from 'node:os';
 import process from 'node:process';
 import WebSocket from 'ws';
 
-const DEFAULT_SOCKET_URL = 'ws://localhost:3333/api/v1/live';
+const DEFAULT_SOCKET_URL = 'wss://api.getdidban.ir/api/v1/live';
 
 export function resolveSocketUrl(value = process.env.DIDBAN_WS_URL ?? DEFAULT_SOCKET_URL) {
   const url = new URL(value);

@@ -1,0 +1,2 @@
+08e41e579fe73dc436b1a189667b254d3f5b0d1bc3ee9934b41dc43c06e44a04  didban-agent-linux-amd64
+77867b09a350ccf0d590ce00ed72b8e9b1577f45a76c683e974cd0696afefb51  didban-agent-linux-arm64
