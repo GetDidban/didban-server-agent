@@ -1,0 +1,21 @@
+{
+  "name": "didban-server-agent",
+  "version": "0.1.0",
+  "description": "Configurable WebSocket telemetry agent for Central Didban",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": ".",
+  "bin": {
+    "didban-agent": "bin/didban-agent.js"
+  },
+  "scripts": {
+    "start": "node bin/didban-agent.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.21.0"
+  }
+}
